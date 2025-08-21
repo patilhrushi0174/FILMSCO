@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — FILMSCO</title>
+  <meta name="description" content="FILMSCO — We Create Brands That Speak" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/index.html">FILMSCO</a>
+      <nav class="menu" id="menu">
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/booking.html">Booking</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main class="site-main">
+
+<section class="section container narrow">
+  <h1>About FILMSCO</h1>
+  <p class="lead">We’re a studio of filmmakers, editors, and brand strategists crafting premium content for brands across India.</p>
+  <p class="muted">From concept to final color, we manage productions end-to-end and collaborate closely with agencies and designers.</p>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">FILMSCO</div>
+        <p class="muted">We craft films, content, and campaigns that speak.</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <p class="muted">Pune, Maharashtra, India</p>
+        <p class="muted">+91-90000-00000</p>
+        <a class="link" href="mailto:hello@filmsco.studio">hello@filmsco.studio</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">© 2025 FILMSCO</div>
+  </footer>
+  <script>
+    // Mobile menu toggle
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    burger.addEventListener('click', () => { 
+      burger.classList.toggle('active'); 
+      menu.classList.toggle('open'); 
+    });
+  </script>
+</body>
+</html>

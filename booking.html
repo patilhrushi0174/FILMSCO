@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking — FILMSCO</title>
+  <meta name="description" content="FILMSCO — We Create Brands That Speak" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/index.html">FILMSCO</a>
+      <nav class="menu" id="menu">
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/booking.html">Booking</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main class="site-main">
+
+<section class="section container narrow">
+  <h1>Book an Appointment</h1>
+  <form class="form" action="#" method="post">
+    <div class="row">
+      <div class="field">
+        <label>First Name</label>
+        <input required name="first_name" type="text" placeholder="John" />
+      </div>
+      <div class="field">
+        <label>Last Name</label>
+        <input required name="last_name" type="text" placeholder="Doe" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="field">
+        <label>Email</label>
+        <input required name="email" type="email" placeholder="you@example.com" />
+      </div>
+      <div class="field">
+        <label>Phone</label>
+        <input name="phone" type="tel" placeholder="+91-" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="field">
+        <label>Preferred Date</label>
+        <input required name="date" type="date" />
+      </div>
+      <div class="field">
+        <label>Time</label>
+        <input required name="time" type="time" />
+      </div>
+    </div>
+    <div class="field">
+      <label>Budget</label>
+      <select name="budget">
+        <option>₹50k–₹1L</option>
+        <option>₹1L–₹3L</option>
+        <option>₹3L–₹10L</option>
+        <option>₹10L+</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Project Details</label>
+      <textarea name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+    </div>
+    <button class="btn" type="submit">Submit</button>
+  </form>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">FILMSCO</div>
+        <p class="muted">We craft films, content, and campaigns that speak.</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <p class="muted">Pune, Maharashtra, India</p>
+        <p class="muted">+91-90000-00000</p>
+        <a class="link" href="mailto:hello@filmsco.studio">hello@filmsco.studio</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">© 2025 FILMSCO</div>
+  </footer>
+  <script>
+    // Mobile menu toggle
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    burger.addEventListener('click', () => { 
+      burger.classList.toggle('active'); 
+      menu.classList.toggle('open'); 
+    });
+  </script>
+</body>
+</html>
